@@ -15,13 +15,13 @@ const AddProductForm = () => {
     try {
       const result = await addProduct(name, price); // Call the addProduct function
       setMessage(`Product added: ${result.name}, Price: ${result.price}`); // Update the message with success info
-      
+      router.push('/auth/products');
     } catch (error) {
       setMessage(`Error:`); // Update the message with an error message
     }
     
   };
-  router.push('/auth/addproduct');
+  // router.push('/auth/addproduct');
   return (
     <div>
       <div className="flex items-center justify-center">

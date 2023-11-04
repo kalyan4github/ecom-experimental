@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link"; // Import Link from Next.js
-import { getAllProducts } from "../actions/addProducts/addProduct";
+import { getAllProducts,deleteProduct  } from "../actions/addProducts/addProduct";
 import { BsPencilSquare } from "react-icons/bs";
 import { AiFillDelete } from "react-icons/ai";
 
